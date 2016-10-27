@@ -1,5 +1,5 @@
 var compiler	= require('./compiler');
-var utils 		= base.require('core/utils');
+var utils	    = require('../../core/utils');
 
 function * StyleElement({files, dir, baseDir} = {}) {
   if(files) files = '*(' + files.join('|') + ')';

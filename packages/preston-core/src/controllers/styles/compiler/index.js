@@ -3,7 +3,7 @@ var DocumentCompiler    = require('./compiler.doc');
 var SassCompiler			  = require('./compiler.sass');
 var JavascriptCompiler	= require('./compiler.script');
 var CopyMethod				  = require('./method.copy');
-var utils							  = base.require('core/utils');
+var utils	              = require('../../../core/utils');
 var assetPath					  = global.buildDir;
 
 compiler.add(/document(\.yml|\.yaml)/ig, new DocumentCompiler());

@@ -5,32 +5,8 @@ var File = require('vinyl');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 var promisify = require('es6-promisify');
-var config 		= base.require('core/config').get('sprite');
 
-var spritesConfig = config.sprites;
-
-var defaultOptions = {
-  dest: 'icons/images',
-  shape: {
-    align: '',
-    transform: []
-  },
-  mode: {
-    css: {
-      dest: '.',
-      bust: false,
-      sprite: 'icons',
-      layout: config.layout,
-      prefix: '.icon-%s',
-      render: {
-        scss: {
-          template: "",
-          dest: ""
-        }
-      }
-    }
-  }
-};
+var config, defaultOptions, spritesConfig;
 
 function resizer(opts) {
   return function(shape, sprite, callback) {
@@ -52,6 +28,33 @@ function getOptions(name, spritesheet, sprites, mapOutputDir, templateDir) {
   return options;
 }
 function SpriteCompiler() {
+  config 		= require('../../../core/config').get('sprite');
+
+  spritesConfig = config.sprites;
+
+  defaultOptions = {
+    dest: 'icons/images',
+    shape: {
+      align: '',
+      transform: []
+    },
+    mode: {
+      css: {
+        dest: '.',
+        bust: false,
+        sprite: 'icons',
+        layout: config.layout,
+        prefix: '.icon-%s',
+        render: {
+          scss: {
+            template: "",
+            dest: ""
+          }
+        }
+      }
+    }
+  };
+
 	return function * ({name, spritesheet, sprites, mapOutputDir, templateDir}) {
 
     var spriter = new SVGSpriter(getOptions(name, spritesheet, sprites, mapOutputDir, templateDir));

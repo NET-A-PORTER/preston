@@ -1,5 +1,5 @@
 var Style	= require('./style');
-var utils 	= base.require('core/utils');
+var utils = require('../../core/utils');
 var Styles	= function (baseDir) {
 	if (!baseDir) throw new Error('No base directory specified');
 	this.baseDir = baseDir;

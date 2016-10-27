@@ -1,5 +1,5 @@
 var sass	= require('node-sass');
-var utils	= base.require('core/utils');
+var utils	= require('../../../core/utils');
 
 function SassCompiler() {
 	return function * ({directory, file}) {

@@ -1,0 +1,23 @@
+{
+  "name": "preston-serve",
+  "version": "0.1.8",
+  "description": "Server to display and document style guides",
+  "bin": "./bin/preston-serve.js",
+  "scripts": {
+    "test": "echo \"No tests to run!\" && exit 0"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^0.19.0",
+    "koa-handlebars": "^0.5.3",
+    "koa-router": "^4.3.2",
+    "koa-static": "^1.4.9",
+    "preston-core": "^0.1.8",
+    "request": "^2.69.0"
+  },
+  "engines": {
+    "node": "6.2.2"
+  },
+  "author": "The Outnet Team",
+  "license": "ISC"
+}

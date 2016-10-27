@@ -1,5 +1,5 @@
 var convict = require('convict');
-var schema = base.require('../config/schema.json');
+var schema = require('../../config/schema.json');
 
 var conf = convict(schema);
 

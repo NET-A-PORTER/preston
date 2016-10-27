@@ -1,5 +1,5 @@
-var config 		= base.require('core/config');
-var utils		= base.require('core/utils');
+var config 		= require('../../core/config');
+var utils		= require('../../core/utils');
 var Element		= require('./element');
 var CopyMethod  = require('./compiler/method.copy');
 var SpriteCompiler  = require('./compiler/compiler.sprite');
@@ -14,7 +14,7 @@ function Style(name, path) {
 Style.prototype = {
 	getDefinition: function() {
 		return utils
-			.readFile(this.path + '/definition.json')
+			.readFile(`${this.path}/${this.name}/definition.json`)
 			.then((contents) => {
 				var parsed = JSON.parse(contents);
 				parsed.name = this.name;
@@ -35,7 +35,7 @@ Style.prototype = {
 	getElement: function * (name) {
     let element = Object.create(Element);
 		return yield * Element.call(element, {
-      dir: this.path + '/' + name,
+      dir: `${this.path}/${this.name}/${name}`,
       baseDir: this.name
     });
 	},
@@ -45,7 +45,7 @@ Style.prototype = {
     for (const file of files) {
       let element = Object.create(Element);
       yield * Element.call(element, {
-        dir: this.path,
+        dir: `${this.path}/${this.name}`,
         files: [file],
         baseDir: this.name
       });

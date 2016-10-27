@@ -1,5 +1,5 @@
 var fs = require('fs');
-var utils	= base.require('core/utils');
+var utils	= require('../../../core/utils');
 
 function copyMethod(targetPath) {
 	return function * ({directory, file, name}) {

@@ -1,5 +1,5 @@
 var fs = require('fs');
-var utils	= base.require('core/utils');
+var utils	= require('../../../core/utils');
 
 function JavascriptCompiler() {
 	return function * ({directory, file, name}) {

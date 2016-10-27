@@ -37,9 +37,6 @@
       }
     }
   },
-  "sprite": {
-
-  },
   "assets": {
     "doc": "Asset information including path and extension",
     "default": [

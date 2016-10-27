@@ -14,9 +14,9 @@ cli
 //remove first and last slash
 global.buildDir = `${process.env.PWD}/${cli.outputDir.replace(/^\/|\/$/g, '')}`;
 global.configDir = `${process.env.PWD}/${cli.configDir.replace(/^\/|\/$/g, '')}`;
+global.styleDir = `${process.env.PWD}/../`;
+global.styleName = require(process.env.PWD + '/definition.json').name;
 if(cli.spriteDir) cli.spriteDir = `${process.env.PWD}/${cli.spriteDir.replace(/^\/|\/$/g, '')}`;
-
-var styleName = require(process.env.PWD + '/definition.json').name;
 
 var build = base.require('controllers/styles').build;
 var utils = base.require('core/utils');
@@ -40,9 +40,9 @@ yield(function * main() {
       })
     }
   }
-  yield * build(styleName, opts);
+  yield * build(global.styleName, opts);
   if(cli.spriteDir) console.log('Generated spritesheets for', dirs);
-  console.log('Generated', styleName, 'in', global.buildDir);
+  console.log('Generated', global.styleName, 'in', global.buildDir);
 }).catch(function(err) {
   console.error('Failed to build. Error:', err);
   process.exit(1);

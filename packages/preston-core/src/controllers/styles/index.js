@@ -1,6 +1,6 @@
 var Style		= require('./style');
 var Styles		= require('./styles');
-var styleDir	= base.path('styles');
+var styleDir	= global.styleDir;
 var styles		= null;
 
 function response(error, name) {
@@ -48,8 +48,7 @@ function * getElement() {
 	}
 }
 
-function * build(styleName, {sprite=[]}) {
-  var styleDir	= process.env.PWD;
+function * build(styleName, {sprite=[]}={}) {
   var style = new Style(styleName, styleDir);
   for(opt of sprite) {
     yield * style.sprite(opt);

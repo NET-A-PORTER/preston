@@ -1,5 +1,5 @@
-var utils = base.require('core/utils');
-var config = base.require('core/config');
+var utils = require('./utils');
+var config = require('./config');
 var Publisher = require('out-publish');
 
 var publisher = new Publisher({
