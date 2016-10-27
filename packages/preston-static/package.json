@@ -1,6 +1,6 @@
 {
   "name": "preston-static",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Static page generator for style guides",
   "bin": "./bin/preston-static.js",
   "author": "The Outnet Team",
