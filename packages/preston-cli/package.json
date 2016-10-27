@@ -1,0 +1,23 @@
+{
+  "name": "preston-cli",
+  "version": "0.1.7",
+  "description": "CLI for building and publishing style guides",
+  "bin": {
+    "preston": "./bin/preston.js"
+  },
+  "repository": "https://github.com/NET-A-PORTER/preston/tree/master/packages/preston-cli",
+  "keywords": [
+    "styleguide"
+  ],
+  "author": "The Outnet Team",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "commander": "^2.9.0",
+    "preston-core": "^0.1.7"
+  },
+  "engines": {
+    "node": "6.2.2"
+  },
+  "devDependencies": {}
+}

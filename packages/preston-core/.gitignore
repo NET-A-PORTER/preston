@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+node_modules
+
+# generated files
+src/client/*
+
+# Mac nonsense
+.DS_Store
+
+# Editor rubbish
+.idea
+
+# config
+config/*
+!config/local.json
+!config/schema.json
+
+# style dependencies
+src/styles/*
