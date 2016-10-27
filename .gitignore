@@ -23,5 +23,5 @@ packages/preston-core/config/*
 !packages/preston-core/config/schema.json
 
 # preston-serve
-packages/preston-server/src/styles/*
-!packages/preston-server/src/styles/preston
+packages/preston-serve/src/styles/*
+!packages/preston-serve/src/styles/preston

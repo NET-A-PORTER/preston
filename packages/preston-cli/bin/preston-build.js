@@ -42,7 +42,7 @@ yield(function * main() {
   }
   yield * build(global.styleName, opts);
   if(cli.spriteDir) console.log('Generated spritesheets for', dirs);
-  console.log('Generated', global.styleName, 'in', global.buildDir);
+  console.log('Generated', global.styleName, 'styles in', global.buildDir);
 }).catch(function(err) {
   console.error('Failed to build. Error:', err);
   process.exit(1);
