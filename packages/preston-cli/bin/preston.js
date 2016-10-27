@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
-require('../src/global');
-
 var cli = require('commander');
-
-var styles;
 
 cli
   .command('build [--outputDir] [--configDir] [--spriteDir]', 'build your style guide assets')

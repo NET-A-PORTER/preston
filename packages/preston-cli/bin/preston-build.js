@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('../src/global');
+require('preston-core/src/global');
 
 var cli = require('commander')
 var yield = require('co');

@@ -9,20 +9,15 @@ pids
 
 # Dependency directory
 node_modules
-
-# generated files
-src/client/*
-
+#
 # Mac nonsense
 .DS_Store
 
 # Editor rubbish
 .idea
 
+# preston-core
 # config
-config/*
-!config/local.json
-!config/schema.json
-
-# style dependencies
-src/styles/*
+packages/preston-core/config/*
+!packages/preston-core/config/local.json
+!packages/preston-core/config/schema.json
