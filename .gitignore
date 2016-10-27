@@ -21,3 +21,7 @@ node_modules
 packages/preston-core/config/*
 !packages/preston-core/config/local.json
 !packages/preston-core/config/schema.json
+
+# preston-serve
+packages/preston-server/src/styles/*
+!packages/preston-server/src/styles/preston
