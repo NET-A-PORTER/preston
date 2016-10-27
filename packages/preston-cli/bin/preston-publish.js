@@ -46,7 +46,9 @@ utils.glob('css/' + style + '.css', { cwd: buildDir })
     return utils.glob('index.html', { cwd: buildDir });
   })
   .then(function(files) {
-    if(files.length > 0) return publish(buildDir, files);
+    if(files.length > 0) return publish(buildDir, files, {
+      'Content-Type': 'text/html; charset=utf-8'
+    });
   })
   .then(function() {
     console.log('Finished publishing.');
