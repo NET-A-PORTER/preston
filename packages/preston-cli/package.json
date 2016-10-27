@@ -1,6 +1,6 @@
 {
   "name": "preston-cli",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "CLI for building and publishing style guides",
   "bin": {
     "preston": "./bin/preston.js"
@@ -14,7 +14,7 @@
   "dependencies": {
     "co": "^4.6.0",
     "commander": "^2.9.0",
-    "preston-core": "^0.1.8"
+    "preston-core": "^0.1.9"
   },
   "engines": {
     "node": "6.2.2"
