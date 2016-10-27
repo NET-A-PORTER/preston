@@ -32,7 +32,7 @@ utils.glob('css/' + style + '.css', { cwd: buildDir })
     return utils.glob('images/*.*', { cwd: buildDir });
   })
   .then(function(files) {
-    return publish(buildDir, files, {
+    if(files.length > 0) return publish(buildDir, files, {
       'Content-Type': 'image/svg+xml'
     });
   })
@@ -40,7 +40,13 @@ utils.glob('css/' + style + '.css', { cwd: buildDir })
     return utils.glob('fonts/*.*', { cwd: buildDir });
   })
   .then(function(files) {
-    return publish(buildDir, files);
+    if(files.length > 0) return publish(buildDir, files);
+  })
+  .then(function() {
+    return utils.glob('index.html', { cwd: buildDir });
+  })
+  .then(function(files) {
+    if(files.length > 0) return publish(buildDir, files);
   })
   .then(function() {
     console.log('Finished publishing.');
