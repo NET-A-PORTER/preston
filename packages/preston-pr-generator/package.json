@@ -1,6 +1,6 @@
 {
   "name": "preston-pr-generator",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Generates pull requests for apps when a new version of a style guide is released",
   "main": "index.js",
   "scripts": {
