@@ -1,0 +1,16 @@
+{
+  "name": "preston-pr-generator",
+  "version": "0.2.2",
+  "description": "Generates pull requests for apps when a new version of a style guide is released",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test-pull-request.js && node test/test-file.js"
+  },
+  "author": "The Outnet Team",
+  "license": "ISC",
+  "dependencies": {
+    "github": "^2.4.0",
+    "node-fetch": "^1.6.3",
+    "travisci-webhook-handler": "^2.0.0"
+  }
+}
