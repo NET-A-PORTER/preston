@@ -1,12 +1,12 @@
 {
   "name": "preston-static",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "description": "Static page generator for style guides",
   "bin": "./bin/preston-static.js",
   "author": "The Outnet Team",
   "license": "ISC",
   "dependencies": {
     "commander": "^2.9.0",
-    "preston-core": "^0.1.9"
+    "preston-core": "^0.2.4"
   }
 }

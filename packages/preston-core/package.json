@@ -1,6 +1,6 @@
 {
   "name": "preston-core",
-  "version": "0.1.9",
+  "version": "0.2.4",
   "description": "Core library for building and publishing style guides",
   "repository": "https://github.com/NET-A-PORTER/preston/tree/master/packages/preston-core",
   "keywords": [
