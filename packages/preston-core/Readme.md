@@ -1,3 +1,3 @@
 # preston-core
-Core library and CLI for building style guides
+Core library for publishing and building style guides
 

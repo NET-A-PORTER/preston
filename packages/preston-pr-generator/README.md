@@ -1,8 +1,6 @@
-# Preston Pull Request Generator
+# preston-pr-generator
 
-Generates Pull Requests on [Preston](https://github.com/NET-A-PORTER/preston) when a new version of [Outnet-2015](https://github.com/NET-A-PORTER/outnet-2015) is released.
-
-Hosted on: [https://preston-nap-pr-generator.herokuapp.com/webhook](https://preston-nap-pr-generator.herokuapp.com/webhook)
+Generates Pull Requests when a new version of a style guide is released.
 
 ## Test
 
